@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+         
+                           http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	<bean id="mathCheatObjectValue"
+		class="spring_Dep_Injuction_Obj_Interface.MathCheat"></bean>
+		
+	<bean id="scienceObjectValue"
+		class="spring_Dep_Injuction_Obj_Interface.ScienceCheat"></bean>
+		
+	<bean id="javaCheatObjectValue"
+		class="spring_Dep_Injuction_Obj_Interface.JavaCheat"></bean>
+
+	<bean id="stu" class="spring_Dep_Injuction_Obj_Interface.Student">
+		<property name="cheat" ref="mathCheatObjectValue">
+		</property>
+	</bean>
+	<!-- <bean id="anotherStudent" class="spring_dependency_injuction_object.AnotherStudent"> 
+		<property name="cheat" ref="mathCheatObjectValue"> </property> </bean> -->
+
+
+</beans>

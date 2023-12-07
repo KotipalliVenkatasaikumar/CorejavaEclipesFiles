@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+         
+                           http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	<!-- setter injucton -->
+
+	<!-- <bean id="student" class="springDependencyInjuction.Student"> <property 
+		name="StudentName" value="kvs"></property> <property name="studentId" value="1"> 
+		</property> </bean> <bean id="sai" class="springDependencyInjuction.Student"> 
+		<property name="StudentName" value="sai"></property> <property name="studentId" 
+		value="2"> </property> </bean> -->
+
+
+	<!-- constructor injuction -->
+
+	<bean id="student" class="springDependencyInjuction.Student">
+		<constructor-arg name="StudentName" value="kvs" />
+		<constructor-arg name="studentId" value="1" />
+	</bean>
+
+	<bean id="kvs" class="springDependencyInjuction.Student">
+		<constructor-arg name="studentId" value="2" />
+	</bean>
+
+
+</beans>

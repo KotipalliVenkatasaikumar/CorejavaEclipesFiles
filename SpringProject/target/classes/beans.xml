@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- Bean definitions go here -->
+	<bean id="Airtel" class="com.spring.ioc.Airtel"></bean>
+	<bean id="Vodaphone" class="com.spring.ioc.Vodaphone"></bean>
+	<bean id="Sim" class="com.spring.ioc.Vodaphone"></bean>
+
+</beans>
+
