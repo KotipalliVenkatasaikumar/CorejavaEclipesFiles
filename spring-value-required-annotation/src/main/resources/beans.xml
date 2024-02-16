@@ -10,6 +10,7 @@
 
 
 	<context:annotation-config />
+	
 	<context:property-placeholder
 		location="classpath:Stuedent-info-properties" />
 		

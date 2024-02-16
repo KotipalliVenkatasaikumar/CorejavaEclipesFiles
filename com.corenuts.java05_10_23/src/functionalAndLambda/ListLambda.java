@@ -19,7 +19,7 @@ public class ListLambda {
 	}
 
 	public static void main(String[] args) {
-		m1(2);
+//		m1(4);
 		List<String> list = new ArrayList<>();
 		list.add("sai");
 		list.add("kumar");

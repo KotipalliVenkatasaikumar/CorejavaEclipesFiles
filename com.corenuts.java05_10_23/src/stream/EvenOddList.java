@@ -26,29 +26,31 @@ public class EvenOddList {
 //			}
 //		});
 
-//	 Consumer<Integer> method = (a) -> { System.out.println(a); };
-//	 list.forEach( method );
-//		for(Integer i:list) {
-//			if(i%2!=0) {
-//				System.out.println(i);
-//			}
-//	
+	 Consumer<Integer> method = (a) -> { System.out.println(a); };
+	 
+	 list.forEach( method );
+		for(Integer i:list) {
+			if(i%2!=0) {
+				System.out.println(i);
+			}
+	
 	 
 	
 //	}
 	 
-	 for(int i=1000;i>=1;i--) {
-		 int count=0;
-		 for(int j =1;j<=i;j++) {
-			 if(i%j==0) {
-				 count++;
-			 }
-			  }
-		 if(count==2) {
-			 System.out.println(i);
-		 }
-		 }
+//	 for(int i=1000;i>=1;i--) {
+//		 int count=0;
+//		 for(int j =1;j<=i;j++) {
+//			 if(i%j==0) {
+//				 count++;
+//			 }
+//			  }
+//		 if(count==2) {
+//			 System.out.println(i);
+//		 }
+//		 }
 	
 	}
 
+}
 }

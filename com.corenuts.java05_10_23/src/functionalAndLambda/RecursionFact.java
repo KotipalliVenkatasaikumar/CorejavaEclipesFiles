@@ -10,7 +10,7 @@ public class RecursionFact {
         }
   }
 	public static void main(String[] args) {
-		System.out.println("factorial : 5 is "+ factorial(5));
+		System.out.println("factorial : 5 is "+ factorial(3));
 	}
 
 }

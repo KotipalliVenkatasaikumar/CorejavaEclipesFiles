@@ -1,7 +1,7 @@
 package functionalAndLambda;
 
 public class Sample {
-	public static void m1(int num) {
+	public static void m1(int num) {  //without creating loop
 		if (num <= 100) {
 			System.out.println(num);
 			m1(num + 1);

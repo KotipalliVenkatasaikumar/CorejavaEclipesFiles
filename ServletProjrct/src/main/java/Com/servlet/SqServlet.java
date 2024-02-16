@@ -3,6 +3,7 @@ package Com.servlet;
 import java.io.IOException;
 import java.io.PrintWriter;
 
+import jakarta.servlet.ServletConfig;
 import jakarta.servlet.http.Cookie;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
@@ -50,6 +51,9 @@ public class SqServlet extends HttpServlet {
 		out.println(html1);
 
 		System.out.println("sq calling");
+		
+		
+		
 	}
 
 }

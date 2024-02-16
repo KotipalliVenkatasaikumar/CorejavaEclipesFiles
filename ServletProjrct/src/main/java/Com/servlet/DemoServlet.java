@@ -35,14 +35,14 @@ public class DemoServlet extends HttpServlet {
 		PrintWriter out = response.getWriter();
 		out.println("Hello");
 		
-		ServletConfig config = getServletConfig();
-		String str=config.getInitParameter("name");
-		out.println(str);
-		out.print("its working");
+//		ServletConfig config = getServletConfig();
+//		String str=config.getInitParameter("name");
+//		out.println(str);
+//		out.print("its working");
 		
-//		ServletContext context= getServletContext();
-//		String str =context.getInitParameter("city");
-//		out.println(str); 
+		ServletContext context= getServletContext();
+		String str =context.getInitParameter("city");
+		out.println(str); 
 	}
 
 	/**

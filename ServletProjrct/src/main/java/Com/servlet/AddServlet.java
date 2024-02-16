@@ -24,7 +24,7 @@ public class AddServlet extends HttpServlet {
 //		PrintWriter out =response.getWriter();
 //		out.println("result "+ sum);
 
-			// Sending request object to another Servlet.
+	// Sending request object to another Servlet.
 
 //		request.setAttribute("sum", sum );
 //		RequestDispatcher rd=request.getRequestDispatcher("sq");
@@ -33,6 +33,7 @@ public class AddServlet extends HttpServlet {
 			// sendRedirect
 
 //		response.sendRedirect("sq?sum="+sum);  // URL Rewriting
+//		response.sendRedirect("https://www.jiocinema.com/sports/ipl-2024-player-auction/3873205");  // URL Rewriting
 
 			// HTTP session cookie
 

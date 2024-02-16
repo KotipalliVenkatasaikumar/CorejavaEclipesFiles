@@ -15,6 +15,7 @@ import java.sql.SQLException;
 /**
  * Servlet implementation class Crud
  */
+@WebServlet("/Crud")
 public class Crud extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
@@ -23,7 +24,7 @@ public class Crud extends HttpServlet {
 		// TODO Auto-generated method stub
 
 	}
-
+  
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		// TODO Auto-generated method stub
@@ -36,6 +37,7 @@ public class Crud extends HttpServlet {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/register", "root", "root");
 			String operationName = request.getParameter("operation");
+			
 			PrintWriter out = response.getWriter();
 			if (operationName.equalsIgnoreCase("insert")) {
 				int stuid = Integer.parseInt(request.getParameter("id"));
@@ -51,6 +53,7 @@ public class Crud extends HttpServlet {
 				ps.setString(3, fname);
 				ps.setString(4, address);
 				ps.setString(5, country);
+				
 				int i = ps.executeUpdate();
 				if (i > 0) {
 					out.print("you are succesfully register ");

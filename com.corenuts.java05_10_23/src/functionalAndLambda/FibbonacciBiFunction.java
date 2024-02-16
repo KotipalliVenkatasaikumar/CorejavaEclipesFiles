@@ -7,6 +7,7 @@ public class FibbonacciBiFunction {
 		BiFunction<Integer, Integer,Integer> b1 =(a,b)-> {
 			int sum=0;
 			System.out.print(a+" "+b);
+			
 			for(int i=0;i<=10;i++) {
 				sum=a+b;
 				a=b;

@@ -15,7 +15,7 @@ public class MyServlet extends HttpServlet{
 	public void doGet (HttpServletRequest request , HttpServletResponse response ) throws IOException {
 		
 		PrintWriter out = response.getWriter();
-		out.println("Hello");
+//		out.println("Hello");
 		
 		//ServletContext
 		
@@ -23,10 +23,10 @@ public class MyServlet extends HttpServlet{
 //		String str =context.getInitParameter("city");
 //		out.println(str); 
 		
-		//ServletConfig
+//		//ServletConfig
 //		ServletConfig config = getServletConfig();
-//		String str=config.getInitParameter("name");
-//		out.println(str);
+//		String str1=config.getInitParameter("name");
+//		out.println(str1);
 		
 		}
 		

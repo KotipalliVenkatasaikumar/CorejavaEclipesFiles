@@ -12,7 +12,7 @@
 		<servlet-name>abcd</servlet-name>
 		<url-pattern>/add</url-pattern>
 	</servlet-mapping>
-	
+
 	<servlet>
 		<servlet-name>pqr</servlet-name>
 		<servlet-class>Com.servlet.SqServlet</servlet-class>
@@ -21,8 +21,8 @@
 		<servlet-name>pqr</servlet-name>
 		<url-pattern>/sq</url-pattern>
 	</servlet-mapping>
-	
-	
+
+
 	<context-param>
 		<param-name>name</param-name>
 		<param-value>Kumar</param-value>
@@ -31,8 +31,8 @@
 		<param-name>city</param-name>
 		<param-value>kakinada</param-value>
 	</context-param>
-	
-	
+
+
 	<servlet>
 		<description></description>
 		<display-name>MyServlet</display-name>

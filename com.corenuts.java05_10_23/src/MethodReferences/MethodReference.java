@@ -1,11 +1,14 @@
 package MethodReferences;
 
 public class MethodReference {
-	public static void saySomething() {
+	public  void saySomething() {
 		System.out.println("static method");
 	}
+	
 	public static void main(String[] args) {
-		Sayable s = MethodReference::saySomething;  // Static method references
+		MethodReference methodReference=new MethodReference();
+		Sayable s = methodReference::saySomething;  // Static method references
+		//instance reference
 		s.say();
 	}
 

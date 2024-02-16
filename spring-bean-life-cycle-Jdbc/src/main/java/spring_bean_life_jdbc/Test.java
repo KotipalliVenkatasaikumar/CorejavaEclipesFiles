@@ -17,6 +17,10 @@ public class Test {
 		StudentDAO studentDAO = context.getBean("studentDao", StudentDAO.class);
 		studentDAO.selectAllRows();
 
+
+		
+//		studentDAO.deleteStuddentRecord(6);
+
 	}
 
 }
